@@ -63,5 +63,4 @@ class Tester {
                     + " and branch is " + p.getBranch());
         }
     }
-
 }
