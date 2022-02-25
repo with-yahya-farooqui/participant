@@ -12,6 +12,7 @@ class Participant {
         this.branch = branch;
         registrationId = "D" + counter;
         counter++;
+        System.out.println("Hi " +this.name+ "! Your Registration ID is " +this.registrationId+ " and branch is " +this.branch);
     }
 
     String getRegistrationId() {
@@ -57,10 +58,5 @@ class Tester {
         Participant p2 = new Participant("Sayli", 9999999999L, "Mechanical");
         Participant p3 = new Participant("Alice", 9999888877L, "Production");
         Participant p4 = new Participant("Bob", 8888888888L, "Chemical");
-        Participant[] arr = { p1, p2, p3, p4 };
-        for (Participant p : arr) {
-            System.out.println("Hi " + p.getName() + "! Your Registration ID is " + p.getRegistrationId()
-                    + " and branch is " + p.getBranch());
-        }
     }
 }
